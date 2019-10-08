@@ -1,1 +1,21 @@
 = Notes about rabbitmq
+
+== 1st play
+
+----
+$ cp env.sample .env
+$ vim .env
+$ make up
+$ make info
+docker-compose exec mq rabbitmqctl list_exchanges name type durable auto_delete internal arguments
+policy
+Listing exchanges for vhost / ...
+name    type    durable auto_delete     internal        arguments       policy
+amq.match       headers true    false   false   []
+amq.topic       topic   true    false   false   []
+amq.headers     headers true    false   false   []
+amq.rabbitmq.trace      topic   true    false   true    []
+amq.fanout      fanout  true    false   false   []
+        direct  true    false   false   []
+amq.direct      direct  true    false   false   []
+----

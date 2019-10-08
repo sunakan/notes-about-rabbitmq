@@ -1,0 +1,12 @@
+---
+
+version: "3.7"
+
+services:
+  mq:
+    working_dir: /app
+    image: rabbitmq:${RAPPIDMQ_VERSION_TAG:-3}
+    ports:
+      - 5672:5672
+    volumes:
+      - ./rabbitmq-data:/var/lib/rabbitmq
