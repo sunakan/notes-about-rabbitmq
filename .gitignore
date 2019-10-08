@@ -222,3 +222,4 @@ gradle-app.setting
 # End of https://www.gitignore.io/api/vim,java,macos,maven,gradle,windows,rubymine+all
 
 **/tmp/
+.env
